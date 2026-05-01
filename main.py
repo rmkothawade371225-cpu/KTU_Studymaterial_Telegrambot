@@ -24,6 +24,7 @@ dp.register_message_handler(start_handler, commands=['start'], state='*')
 dp.register_message_handler(department_handler, state=UserState.waiting_for_department)
 dp.register_message_handler(semester_handler, state=UserState.waiting_for_semester)
 dp.register_message_handler(subject_handler, state=UserState.waiting_for_subject)
+dp.register_message_handler(unit_handler,state=Userstate.waiting_for_unit)
 dp.register_message_handler(material_handler, state=UserState.waiting_for_material_type)
 
 if __name__ == '__main__':
